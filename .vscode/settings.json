@@ -1,0 +1,24 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "editor.fontFamily": "'Fira Code Retina', Consolas, 'Courier New', monospace",
+    "window.zoomLevel": 1,
+    "editor.fontLigatures": false,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 24,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80, 120],
+    "editor.tabSize": 2,
+    "terminal.integrated.fontSize": 14,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "breadcrumbs.enabled": true,
+    "editor.parameterHints.enabled": true,
+    "prettier.singleQuote": true,
+    "files.autoSave": "onFocusChange",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
+}
