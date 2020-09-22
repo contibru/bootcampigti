@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desafio módulo 1</title>
 </head>
 
@@ -11,17 +11,29 @@
   <div class="container">
     <div class="searchContainer">
       <h1>Users Search</h1>
-      <input type="search" placeholder="Digite o nome para busca"> <i class="fas fa-search"></i>
+      <input type="search" placeholder="Digite o nome para busca" id="searchBox" />
+      <i class="fas fa-search"></i>
     </div>
     <div class="resultContainer">
       <div class="results">
-        <h2>999 usuários encontrados</h2>
+        <h2 id="cntUsers">Nothing here</h2>
+        <div>
+          <ul id="listaUsuarios">
+          </ul>
+        </div>
       </div>
       <div class="stats">
         <h2>Statistics</h2>
+        <label>Male gender: </label>
+        <input type="text" id="cntMale" /><br />
+        <label>Female gender: </label>
+        <input type="text" id="cntFemale" /><br />
+        <label>Sum of ages: </label>
+        <input type="text" id="AgeSum" /><br />
+        <label>Average of ages: </label>
+        <input type="text" id="AgeAvg" /><br />
       </div>
     </div>
-
   </div>
 </body>
 
@@ -41,6 +53,11 @@
     align-items: center;
   }
 
+  .imgUser {
+    border-radius: 50%;
+
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -56,8 +73,13 @@
     width: 50%;
   }
 
-  .resultContainer div {
+  .searchContainer {
+    width: 50%;
+    text-align: center;
+  }
 
+  .resultContainer div {
+    text-align: center;
     width: 50%;
   }
 </style>

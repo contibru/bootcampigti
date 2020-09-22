@@ -11,6 +11,9 @@ var stats = {
 
 function start() {
   loadUsersIntoVar()
+
+  document.getElementById("searchBox").addEventListener('keyup', filterUsers)
+
 }
 
 async function loadUsersIntoVar() {
@@ -45,13 +48,34 @@ function calculateStats() {
 
   stats.AgeAvg = Number((stats.AgeSum / filteredList.length).toFixed(2))
 
+  document.getElementById("cntMale").value = stats.cntMale
+  document.getElementById("cntFemale").value = stats.cntFemale
+  document.getElementById("AgeSum").value = stats.AgeSum
+  document.getElementById("AgeAvg").value = stats.AgeAvg
+
 }
 
-function filterUsers(name) {
+function filterUsers(event) {
 
   filteredList = userList.filter(user => {
-    return user.name.toLowerCase().includes(name.toLowerCase())
+    return user.name.toLowerCase().includes(event.target.value.toLowerCase())
   })
+  document.getElementById("cntUsers").innerHTML = `${filteredList.length} usuários encontrados!`
 
+  luElement = document.getElementById("listaUsuarios")
+  luElement.innerHTML = ""
+  filteredList.forEach(user => {
+    let img = document.createElement('img')
+    img.setAttribute('src', user.picture)
+    img.className = 'imgUser'
+    let span = document.createElement('span')
+    span.innerHTML = `${user.name}, ${user.age} anos`
+
+    let liElement = document.createElement('li')
+    liElement.appendChild(img)
+    liElement.appendChild(span)
+
+    luElement.appendChild(liElement)
+  });
   calculateStats()
 }
