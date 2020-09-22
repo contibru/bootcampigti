@@ -19,6 +19,6 @@
     "breadcrumbs.enabled": true,
     "editor.parameterHints.enabled": true,
     "prettier.singleQuote": true,
-    "files.autoSave": "onFocusChange",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
+    "files.autoSave": "onFocusChange"
+
 }
