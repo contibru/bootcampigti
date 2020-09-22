@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio módulo 1</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="searchContainer">
+      <h1>Users Search</h1>
+      <input type="search" placeholder="Digite o nome para busca"> <i class="fas fa-search"></i>
+    </div>
+    <div class="resultContainer">
+      <div class="results">
+        <h2>999 usuários encontrados</h2>
+      </div>
+      <div class="stats">
+        <h2>Statistics</h2>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/eeaaf61cfc.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+<style>
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+  }
+
+  .resultContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .resultContainer div {
+
+    width: 50%;
+  }
+</style>
