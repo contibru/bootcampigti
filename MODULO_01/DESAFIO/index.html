@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio módulo 1</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desafio módulo 1</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="searchContainer">
-      <h1>Users Search</h1>
-      <input type="search" placeholder="Digite o nome para busca" id="searchBox" />
-      <i class="fas fa-search"></i>
-    </div>
-    <div class="resultContainer">
-      <div class="results">
-        <h2 id="cntUsers">Nothing here</h2>
-        <div>
-          <ul id="listaUsuarios">
-          </ul>
+  <body>
+    <div class="container">
+      <div class="searchContainer">
+        <h1>Users Search</h1>
+        <input
+          type="search"
+          placeholder="Digite o nome para busca"
+          id="searchBox"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="resultContainer">
+        <div class="results">
+          <h2 id="cntUsers">Nothing here</h2>
+          <div class="userList">
+            <ul class="list" id="listaUsuarios"></ul>
+          </div>
+        </div>
+        <div class="stats">
+          <h2>Statistics</h2>
+          <label>Male gender: </label>
+          <input type="text" id="cntMale" /><br />
+          <label>Female gender: </label>
+          <input type="text" id="cntFemale" /><br />
+          <label>Sum of ages: </label>
+          <input type="text" id="AgeSum" /><br />
+          <label>Average of ages: </label>
+          <input type="text" id="AgeAvg" /><br />
         </div>
       </div>
-      <div class="stats">
-        <h2>Statistics</h2>
-        <label>Male gender: </label>
-        <input type="text" id="cntMale" /><br />
-        <label>Female gender: </label>
-        <input type="text" id="cntFemale" /><br />
-        <label>Sum of ages: </label>
-        <input type="text" id="AgeSum" /><br />
-        <label>Average of ages: </label>
-        <input type="text" id="AgeAvg" /><br />
-      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
-<script src="https://kit.fontawesome.com/eeaaf61cfc.js" crossorigin="anonymous"></script>
+<script
+  src="https://kit.fontawesome.com/eeaaf61cfc.js"
+  crossorigin="anonymous"
+></script>
 <script src="./script.js"></script>
 
 <style>
@@ -52,12 +56,6 @@
     height: 100%;
     align-items: center;
   }
-
-  .imgUser {
-    border-radius: 50%;
-
-  }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -66,20 +64,49 @@
     width: 100%;
   }
 
+  .searchContainer {
+    width: 50%;
+    text-align: center;
+  }
+
   .resultContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 50%;
   }
-
-  .searchContainer {
-    width: 50%;
-    text-align: center;
+  .userList {
+    display: flex;
+    align-content: space-around;
+    flex-direction: row;
   }
 
-  .resultContainer div {
-    text-align: center;
-    width: 50%;
+  .list-item {
+    display: flex;
+    align-items: center;
+  }
+  .list .userImg {
+    flex-shrink: 0;
+    padding: 0 10px 10px 0;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  .list .userName {
+    flex-grow: 1;
+  }
+
+  .list .userName h4 {
+    margin: 0;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .list .userName p {
+    margin-top: 5px;
+    color: #aaa;
+    margin-bottom: 0;
   }
 </style>
