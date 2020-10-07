@@ -8,8 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "glob": "^7.1.6"
-  }
+  "type": "module"
 }
