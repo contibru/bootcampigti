@@ -21,6 +21,7 @@
     "breadcrumbs.enabled": true,
     "editor.parameterHints.enabled": true,
     "prettier.singleQuote": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "git.ignoreLimitWarning": true
 
 }
