@@ -22,6 +22,7 @@
     "editor.parameterHints.enabled": true,
     "prettier.singleQuote": true,
     "editor.formatOnSave": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    
 
 }
